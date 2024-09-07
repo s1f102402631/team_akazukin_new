@@ -7,7 +7,7 @@ public class Kaitest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Kai test
+        int test;
         
     }
 
