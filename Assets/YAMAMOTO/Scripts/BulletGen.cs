@@ -18,7 +18,9 @@ public class BulletGen : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             GameObject Bullet = Instantiate(BulletPrefab);
-            Bullet.GetComponent<BulletCtrl>().Shoot(new Vector3(0, 200, 2000));
+            //Bullet.GetComponent<BulletCtrl>().Shoot(new Vector3(0, 200, 2000));
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Bullet.GetComponent<BulletCtrl>().Shoot(ray.direction * 2000);
         }
     }
 }
