@@ -13,13 +13,13 @@ public class BulletCtrl : MonoBehaviour
     {
         GetComponent<Rigidbody>().isKinematic = true;
         GetComponent<ParticleSystem>().Play();
-        Destroy(gameObject, 0.5f);
+        Destroy(this.gameObject, 0.5f);
     }
 
     //Start():読み込み時１回のみ実行される.
     void Start()
     {
-        Application.targetFrameRate = 60;
+        //Application.targetFrameRate = 60;
         //Shoot(new Vector3(0, 200, 2000));
     }
 

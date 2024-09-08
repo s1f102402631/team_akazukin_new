@@ -2,16 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletGen : MonoBehaviour
+public class PlayerCtrl : MonoBehaviour
 {
-    public GameObject BulletPrefab;
-    public Transform TraBulletGen;
+    //float speed = 0;
 
     public void Move(float x, float y, float z)
     {
         transform.Translate(x, y, z);
     }
-    
+
     public void MoveZ(float z)
     {
         transform.Translate(0, 0, z);
@@ -22,22 +21,23 @@ public class BulletGen : MonoBehaviour
         transform.position = new Vector3(x, y, z);
     }
 
+    public Vector3 GetPlayerPos()
+    {
+        Vector3 PlayerPos = transform.position;
+        return PlayerPos;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         //Application.targetFrameRate = 60;
-        TraBulletGen = transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            GameObject Bullet = Instantiate(BulletPrefab, TraBulletGen);
-            //Bullet.GetComponent<BulletCtrl>().Shoot(new Vector3(0, 200, 2000));
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Bullet.GetComponent<BulletCtrl>().Shoot(ray.direction * 2000);
-        }
+        //MoveZ(0.01f);
+        //Vector3 test_pos = GetPlayerPos();
+        //Debug.Log(test_pos.z);
     }
 }
