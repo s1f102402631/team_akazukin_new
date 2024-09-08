@@ -13,7 +13,7 @@ public class BulletCtrl : MonoBehaviour
     {
         GetComponent<Rigidbody>().isKinematic = true;
         GetComponent<ParticleSystem>().Play();
-        Destroy(gameObject, .5f);
+        Destroy(gameObject, 0.5f);
     }
 
     //Start():読み込み時１回のみ実行される.
