@@ -9,11 +9,13 @@ public class BulletCtrl : MonoBehaviour
         GetComponent<Rigidbody>().AddForce(dir);
     }
 
+    public float DestroyTime = 0.0f;
     void OnCollisionEnter(Collision collision)
     {
+        //Debug.Log(collision.gameObject.name);
         //GetComponent<Rigidbody>().isKinematic = true;
         //GetComponent<ParticleSystem>().Play();
-        Destroy(this.gameObject, 0.5f);
+        Destroy(this.gameObject, DestroyTime);
     }
 
     //Start():読み込み時１回のみ実行される.
