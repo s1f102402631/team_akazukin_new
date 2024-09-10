@@ -13,29 +13,29 @@ public class ScoreManager : MonoBehaviour
         {"Rabbit", 1000}
     };
 
-    void SetScore(int num)
+    public void SetScore(int num)
     {
         TotalScore = num;
     }
 
-    void PlusScore(string Target)
+    public void PlusScore(string Target)
     {
         int Score = TagetScore[Target];
         TotalScore = TotalScore + Score;
     }
 
-    void MinusScore(string Target)
+    public void MinusScore(string Target)
     {
         int Score = TagetScore[Target];
         TotalScore = TotalScore - Score;
     }
 
-    void DebugScore()
+    public void DebugScore()
     {
         Debug.Log(TotalScore);
     }
 
-    int Score()
+    public int Score()
     {
         return TotalScore;
     }
