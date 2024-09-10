@@ -24,25 +24,20 @@ public class GameSystem : MonoBehaviour
         ScrRangeWall = ObjRangeWall.GetComponent<RangeWallCtrl>();
 
         /*
-        Debug.Log(ObjPlayer);
-        Debug.Log(ScrPlayer);
-        Debug.Log(ObjBulletGenerator);
-        Debug.Log(ScrBulletGenerator);
-        */
-
-        /*
         Debug.Log(Player);
         Vector3 test_pos = Player.GetComponent<PlayerCtrl>().GetPlayerPos();
         Debug.Log(test_pos.z);
         */
     }
 
-    float ScrollSpeed = 0.01f;
+    public float ScrollSpeed = 0.01f;
     // Update is called once per frame
     void Update()
     {
+        /*
         ScrBulletGenerator.MoveZ(ScrollSpeed);
         ScrPlayer.MoveZ(ScrollSpeed);
         ScrRangeWall.MoveZ(ScrollSpeed);
+        */
     }
 }
