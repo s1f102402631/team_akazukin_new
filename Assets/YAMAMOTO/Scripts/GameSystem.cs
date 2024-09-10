@@ -34,10 +34,10 @@ public class GameSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
+        
         ScrBulletGenerator.MoveZ(ScrollSpeed);
         ScrPlayer.MoveZ(ScrollSpeed);
         ScrRangeWall.MoveZ(ScrollSpeed);
-        */
+        
     }
 }
