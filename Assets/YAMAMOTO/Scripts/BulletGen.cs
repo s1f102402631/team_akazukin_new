@@ -7,6 +7,8 @@ public class BulletGen : MonoBehaviour
     public GameObject BulletPrefab;
     public Transform TraBulletGen;
 
+    public bool CanFire = false;
+
     public void Move(float x, float y, float z)
     {
         transform.Translate(x, y, z);
@@ -27,6 +29,8 @@ public class BulletGen : MonoBehaviour
     {
         //Application.targetFrameRate = 60;
         TraBulletGen = transform;
+
+        CanFire = false;
     }
 
     // Update is called once per frame
@@ -34,6 +38,8 @@ public class BulletGen : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            if (! CanFire){return;}
+            
             GameObject Bullet = Instantiate(BulletPrefab, TraBulletGen);
             //Bullet.GetComponent<BulletCtrl>().Shoot(new Vector3(0, 200, 2000));
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
