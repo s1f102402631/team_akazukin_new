@@ -9,7 +9,7 @@ public class BirdCtrl : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        //Destroy(this.gameObject, 0.1f);
+        Destroy(this.gameObject, 0.0f);
         ScrScoreManager.PlusScore("Bird");
         ScrScoreManager.DebugScore();
     }
