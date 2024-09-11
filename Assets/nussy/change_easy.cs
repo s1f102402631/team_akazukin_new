@@ -17,6 +17,7 @@ public class change_easy : MonoBehaviour //change‚Æ‚¢‚¤–¼‘O‚É‚µ‚Ü‚·
     }
     public void change_button() //change_button‚Æ‚¢‚¤–¼‘O‚É‚µ‚Ü‚·
     {
+        Debug.Log(score);
         if (score >= limitscore)
         {
             SceneManager.LoadScene("Easy");//second‚ğŒÄ‚Ño‚µ‚Ü‚·
