@@ -2020,7 +2020,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1159924845
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2192,7 +2192,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u30B9\u30C6\u30FC\u30B8"
+  m_text: "\u30B9\u30BF\u30FC\u30C8"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9db4bf1ed93777d49ae22ab265cd0191, type: 2}
   m_sharedMaterial: {fileID: 6003617750350199199, guid: 9db4bf1ed93777d49ae22ab265cd0191,
