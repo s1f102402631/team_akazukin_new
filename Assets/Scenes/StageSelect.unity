@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 81103391}
   - component: {fileID: 81103390}
   - component: {fileID: 81103393}
+  - component: {fileID: 81103394}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -352,6 +353,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cfc147ffdfe38c43ba658161b21ada6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &81103394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81103388}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d743610f285805248b6a33bcb597f2a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
+  limitscore: 20000
 --- !u!1 &100967436
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,6 +542,7 @@ GameObject:
   - component: {fileID: 522197986}
   - component: {fileID: 522197985}
   - component: {fileID: 522197988}
+  - component: {fileID: 522197989}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -660,6 +676,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 884fa9135e218ef48aae0d57a87c4092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &522197989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522197982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cfb2e47ddef0f840bc4cf194c57b767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
+  limitscore: 20000
 --- !u!1 &853454205
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,6 +781,7 @@ GameObject:
   - component: {fileID: 868892842}
   - component: {fileID: 868892841}
   - component: {fileID: 868892844}
+  - component: {fileID: 868892845}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -884,6 +915,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a68d4dc7d31c3f9478c0bf7bbbac4ad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &868892845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868892839}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d2492c08cba5040a3fe8496872ecf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
+  limitscore: 20000
 --- !u!1 &936401824
 GameObject:
   m_ObjectHideFlags: 0
