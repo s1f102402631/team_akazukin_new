@@ -10,6 +10,8 @@ public class GameSystem : MonoBehaviour
     public BulletGen ScrBulletGenerator;
     public GameObject ObjRangeWall;
     public RangeWallCtrl ScrRangeWall;
+    public GameObject ObjScoreManager;
+    public ScoreManager ScrScoreManager;
 
     public int FrameRate = 60;
     public float ScrollSpeed = 0.1f;
@@ -40,6 +42,8 @@ public class GameSystem : MonoBehaviour
         ScrBulletGenerator = ObjBulletGenerator.GetComponent<BulletGen>();
         ObjRangeWall = GameObject.Find("RangeWall");
         ScrRangeWall = ObjRangeWall.GetComponent<RangeWallCtrl>();
+        ObjScoreManager = GameObject.Find("ScoreManager");
+        ScrScoreManager = ObjScoreManager.GetComponent<ScoreManager>();
 
         Transform TraPlayer = ObjPlayer.GetComponent<Transform>();
         Vector3 PlayerPos = TraPlayer.position;
@@ -113,6 +117,7 @@ public class GameSystem : MonoBehaviour
             ScrBulletGenerator.CanFire = false;
             Debug.Log("Finsh!!!");
             FlagStart = false;
+            ScrScoreManager.DisplayScore();
         }
         if (Tick >= FrameLimit){return;}
 

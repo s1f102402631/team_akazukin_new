@@ -39,6 +39,12 @@ public class ScoreManager : MonoBehaviour
     {
         return TotalScore;
     }
+
+    public void DisplayScore()
+    {
+        Debug.Log("スコア：" + TotalScore + "点");
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
