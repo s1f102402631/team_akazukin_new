@@ -15,10 +15,10 @@ public class GameSystem : MonoBehaviour
     public float ScrollSpeed = 0.1f;
     public int TimeLimit = 60;
     public int FrameLimit;
-    public int StartCount = 5;
+    public int StartCount = 3;
     public bool DoScroll = true;
     public int Tick = 0;
-    public bool FlagStart = false;
+    bool FlagStart = false;
 
     private Coroutine IdCountdown;
     private Coroutine IdScroll;
@@ -28,7 +28,7 @@ public class GameSystem : MonoBehaviour
     {
         Application.targetFrameRate = FrameRate;
 
-        int FrameLimit = TimeLimit * FrameRate;
+        FrameLimit = TimeLimit * FrameRate;
         /*
         int StartTime = StartCount * FrameRate;
         int FinishTime = StartCount * FrameRate + FrameLimit;
@@ -72,7 +72,7 @@ public class GameSystem : MonoBehaviour
             }
             yield return new WaitForSeconds(1.0f);
         }
-        Debug.Log("test");
+        //Debug.Log("test");
         FlagStart = true;
         yield break;
     }
@@ -112,6 +112,7 @@ public class GameSystem : MonoBehaviour
         {
             ScrBulletGenerator.CanFire = false;
             Debug.Log("Finsh!!!");
+            FlagStart = false;
         }
         if (Tick >= FrameLimit){return;}
 

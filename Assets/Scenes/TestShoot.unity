@@ -1446,11 +1446,9 @@ MonoBehaviour:
   FrameRate: 60
   ScrollSpeed: 0.1
   TimeLimit: 60
-  FrameLimit: 0
-  StartCount: 5
+  StartCount: 3
   DoScroll: 1
   Tick: 0
-  FlagStart: 0
 --- !u!1 &1794385207
 GameObject:
   m_ObjectHideFlags: 0
