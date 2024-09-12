@@ -9,7 +9,7 @@ public class change_easy : MonoBehaviour //changeという名前にします
 
     public void change_button() //change_buttonという名前にします
     {
-       SceneManager.LoadScene("Easy");//secondを呼び出します
+       SceneManager.LoadScene("Eazy");//secondを呼び出します
 
     }
 }

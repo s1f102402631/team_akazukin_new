@@ -5,38 +5,43 @@ using UnityEngine.SceneManagement;
 
 public class change_midium : MonoBehaviour
 {
-
-    public ScoreManager scoreManager;
-    private int score = 0;
+    public int score = 0;
     public int limitscore = 20000;
     public GameObject chane, locked;
-    
 
     public void Start()
     {
         chane = GameObject.Find("chane_mi");
         locked = GameObject.Find("lock_mi");
-        scoreManager = GetComponent<ScoreManager>();
-        try
+
+        // ScoreManagerのインスタンスを取得
+        ScoreManager scoreManager = ScoreManager.Instance;
+        /*if (scoreManager != null)
         {
             score = scoreManager.Score();
         }
-        catch { 
+        else
+        {
             score = 0;
         }
+
         if (score >= limitscore)
         {
             Destroy(chane);
             Destroy(locked);
-        }
+        }*/
+        score = scoreManager.Score();
+        Debug.Log(score);
+        Destroy(locked);
+        Destroy(chane);
     }
-    public void change_button() //change_buttonという名前にします
+
+    public void change_button()
     {
         Debug.Log(score);
         if (score >= limitscore)
         {
-            SceneManager.LoadScene("Midium");//secondを呼び出します
+            SceneManager.LoadScene("Medium");
         }
-
     }
 }

@@ -4,14 +4,27 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
-    public int TotalScore = 0;
-    //public int SubScore = 0;
+    public static ScoreManager Instance { get; private set; }
+    public static int TotalScore = 0;
     public Dictionary<string, int> TagetScore = new Dictionary<string, int>(){
         {"Wolf", 200},
         {"Apple", 200},
         {"Bird", 500},
         {"Rabbit", 1000}
     };
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     public void SetScore(int num)
     {
@@ -21,13 +34,13 @@ public class ScoreManager : MonoBehaviour
     public void PlusScore(string Target)
     {
         int Score = TagetScore[Target];
-        TotalScore = TotalScore + Score;
+        TotalScore += Score;
     }
 
     public void MinusScore(string Target)
     {
         int Score = TagetScore[Target];
-        TotalScore = TotalScore - Score;
+        TotalScore -= Score;
     }
 
     public void DebugScore()
@@ -44,16 +57,14 @@ public class ScoreManager : MonoBehaviour
     {
         Debug.Log("スコア：" + TotalScore + "点");
     }
-    
-    // Start is called before the first frame update
+
     void Start()
     {
-        
+        TotalScore = 20000;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

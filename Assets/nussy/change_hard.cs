@@ -5,33 +5,42 @@ using UnityEngine.SceneManagement;
 
 public class change_hard : MonoBehaviour
 {
-
-    public ScoreManager scoreManager;
-    private int score = 0;
+    public int score = 0;
     public int limitscore = 30000;
     public GameObject chane, locked;
 
     public void Start()
     {
-        scoreManager = GetComponent<ScoreManager>();
-        try
+        chane = GameObject.Find("chane_ha");
+        locked = GameObject.Find("lock_ha");
+
+        // ScoreManagerのインスタンスを取得
+        ScoreManager scoreManager = ScoreManager.Instance;
+        if (scoreManager != null)
         {
             score = scoreManager.Score();
         }
-        catch
+        else
         {
             score = 0;
         }
-        chane = GameObject.Find("chane_ha");
-        locked = GameObject.Find("lock_ha");
+
+        if (score >= limitscore)
+        {
+            Destroy(chane);
+            Destroy(locked);
+            Debug.Log(score);
+            Destroy(locked);
+            Destroy(chane);
+        }
     }
-    public void change_button() //change_buttonという名前にします
+
+    public void change_button()
     {
         Debug.Log(score);
         if (score >= limitscore)
         {
-            SceneManager.LoadScene("Hard");//secondを呼び出します
+            SceneManager.LoadScene("Hard");
         }
-
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameSystem : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class GameSystem : MonoBehaviour
     public RangeWallCtrl ScrRangeWall;
     public GameObject ObjScoreManager;
     public ScoreManager ScrScoreManager;
+
 
     public int FrameRate = 60;
     public float ScrollSpeed = 0.1f;
@@ -118,6 +120,7 @@ public class GameSystem : MonoBehaviour
             Debug.Log("Finsh!!!");
             FlagStart = false;
             ScrScoreManager.DisplayScore();
+            SceneManager.LoadScene("StageSelect");
         }
         if (Tick >= FrameLimit){return;}
 
