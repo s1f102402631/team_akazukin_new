@@ -602,9 +602,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 522197982}
-        m_TargetAssemblyTypeName: change, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 522197989}
+        m_TargetAssemblyTypeName: change_hard, Assembly-CSharp
+        m_MethodName: change_button
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -664,7 +664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cfb2e47ddef0f840bc4cf194c57b767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreManager: {fileID: 0}
+  score: 0
   limitscore: 20000
   chane: {fileID: 0}
   locked: {fileID: 0}
