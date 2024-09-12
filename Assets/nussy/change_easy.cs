@@ -6,22 +6,10 @@ using UnityEngine.SceneManagement;//UnityƒGƒ“ƒWƒ“‚ÌƒV[ƒ“ŠÇ—ƒvƒƒOƒ‰ƒ€‚ğ—˜—p‚·‚
 public class change_easy : MonoBehaviour //change‚Æ‚¢‚¤–¼‘O‚É‚µ‚Ü‚·
 
 {
-    public ScoreManager scoreManager;
-    private int score = 0;
-    public int limitscore = 20000;
 
-    public void Start()
-    {
-        scoreManager = GetComponent<ScoreManager>();
-        score = scoreManager.Score();
-    }
     public void change_button() //change_button‚Æ‚¢‚¤–¼‘O‚É‚µ‚Ü‚·
     {
-        Debug.Log(score);
-        if (score >= limitscore)
-        {
-            SceneManager.LoadScene("Easy");//second‚ğŒÄ‚Ño‚µ‚Ü‚·
-        }
+       SceneManager.LoadScene("Easy");//second‚ğŒÄ‚Ño‚µ‚Ü‚·
 
     }
 }
