@@ -9,6 +9,7 @@ public class change_hard : MonoBehaviour
     public ScoreManager scoreManager;
     private int score = 0;
     public int limitscore = 30000;
+    public GameObject chane, locked;
 
     public void Start()
     {
@@ -21,6 +22,8 @@ public class change_hard : MonoBehaviour
         {
             score = 0;
         }
+        chane = GameObject.Find("chane_ha");
+        locked = GameObject.Find("lock_ha");
     }
     public void change_button() //change_button‚Æ‚¢‚¤–¼‘O‚É‚µ‚Ü‚·
     {

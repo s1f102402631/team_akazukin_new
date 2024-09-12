@@ -354,6 +354,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreManager: {fileID: 0}
   limitscore: 20000
+  chane: {fileID: 0}
+  locked: {fileID: 0}
 --- !u!1 &100967436
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,7 +368,7 @@ GameObject:
   - component: {fileID: 100967439}
   - component: {fileID: 100967438}
   m_Layer: 5
-  m_Name: Image
+  m_Name: midium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -664,6 +666,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreManager: {fileID: 0}
   limitscore: 20000
+  chane: {fileID: 0}
+  locked: {fileID: 0}
 --- !u!1 &853454205
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,7 +680,7 @@ GameObject:
   - component: {fileID: 853454208}
   - component: {fileID: 853454207}
   m_Layer: 5
-  m_Name: Image
+  m_Name: hard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -913,7 +917,7 @@ GameObject:
   - component: {fileID: 936401827}
   - component: {fileID: 936401826}
   m_Layer: 5
-  m_Name: Image
+  m_Name: easy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -989,7 +993,7 @@ GameObject:
   - component: {fileID: 1070567800}
   - component: {fileID: 1070567799}
   m_Layer: 5
-  m_Name: lock
+  m_Name: lock_ha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1171,7 +1175,7 @@ GameObject:
   - component: {fileID: 1117002744}
   - component: {fileID: 1117002743}
   m_Layer: 5
-  m_Name: chane
+  m_Name: chane_mi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1804,7 +1808,7 @@ GameObject:
   - component: {fileID: 1740203366}
   - component: {fileID: 1740203365}
   m_Layer: 5
-  m_Name: chane
+  m_Name: chane_ha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2131,7 +2135,7 @@ GameObject:
   - component: {fileID: 2050543066}
   - component: {fileID: 2050543065}
   m_Layer: 5
-  m_Name: lock
+  m_Name: lock_mi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
