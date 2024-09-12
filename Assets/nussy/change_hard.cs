@@ -8,12 +8,19 @@ public class change_hard : MonoBehaviour
 
     public ScoreManager scoreManager;
     private int score = 0;
-    public int limitscore = 20000;
+    public int limitscore = 30000;
 
     public void Start()
     {
         scoreManager = GetComponent<ScoreManager>();
-        score = scoreManager.Score();
+        try
+        {
+            score = scoreManager.Score();
+        }
+        catch
+        {
+            score = 0;
+        }
     }
     public void change_button() //change_button‚Æ‚¢‚¤–¼‘O‚É‚µ‚Ü‚·
     {

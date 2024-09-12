@@ -528,7 +528,6 @@ GameObject:
   - component: {fileID: 522197987}
   - component: {fileID: 522197986}
   - component: {fileID: 522197985}
-  - component: {fileID: 522197988}
   - component: {fileID: 522197989}
   m_Layer: 5
   m_Name: Button
@@ -601,7 +600,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 522197988}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: change, Assembly-CSharp
         m_MethodName: change_button
         m_Mode: 1
@@ -651,18 +650,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522197982}
   m_CullTransparentMesh: 1
---- !u!114 &522197988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 522197982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 884fa9135e218ef48aae0d57a87c4092, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &522197989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -670,7 +657,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522197982}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cfb2e47ddef0f840bc4cf194c57b767, type: 3}
   m_Name: 
