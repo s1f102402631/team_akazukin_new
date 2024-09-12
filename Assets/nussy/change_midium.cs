@@ -13,7 +13,13 @@ public class change_midium : MonoBehaviour
     public void Start()
     {
         scoreManager = GetComponent<ScoreManager>();
-        score = scoreManager.Score();
+        try
+        {
+            score = scoreManager.Score();
+        }
+        catch { 
+            score = 0;
+        }
     }
     public void change_button() //change_button‚Æ‚¢‚¤–¼‘O‚É‚µ‚Ü‚·
     {
