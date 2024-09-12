@@ -1127,7 +1127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gaugeBar: {fileID: 478791686}
-  fillSpeed: 0.02
+  fillSpeed: 0.016
 --- !u!1 &521676129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1645,7 +1645,7 @@ Transform:
   m_GameObject: {fileID: 614776347}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 556.19464, y: 252.9386, z: 32.916016}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3040,7 +3040,7 @@ GameObject:
   - component: {fileID: 1658578312}
   - component: {fileID: 1658578311}
   m_Layer: 0
-  m_Name: Admin
+  m_Name: GameSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3070,7 +3070,7 @@ MonoBehaviour:
   ScrollSpeed: 0.1
   TimeLimit: 60
   FrameLimit: 0
-  StartCount: 5
+  StartCount: 3
   DoScroll: 1
   Tick: 0
 --- !u!4 &1658578312

@@ -1140,7 +1140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gaugeBar: {fileID: 478791686}
-  fillSpeed: 0.02
+  fillSpeed: 0.016
 --- !u!1 &521676129
 GameObject:
   m_ObjectHideFlags: 0
