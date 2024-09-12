@@ -60,7 +60,7 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
     {
-        TotalScore = 20000;
+        TotalScore = 0;
     }
 
     void Update()

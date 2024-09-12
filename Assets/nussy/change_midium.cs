@@ -16,7 +16,7 @@ public class change_midium : MonoBehaviour
 
         // ScoreManagerのインスタンスを取得
         ScoreManager scoreManager = ScoreManager.Instance;
-        /*if (scoreManager != null)
+        if (scoreManager != null)
         {
             score = scoreManager.Score();
         }
@@ -29,11 +29,10 @@ public class change_midium : MonoBehaviour
         {
             Destroy(chane);
             Destroy(locked);
-        }*/
-        score = scoreManager.Score();
-        Debug.Log(score);
-        Destroy(locked);
-        Destroy(chane);
+            Debug.Log(score);
+            Destroy(locked);
+            Destroy(chane);
+        }
     }
 
     public void change_button()
