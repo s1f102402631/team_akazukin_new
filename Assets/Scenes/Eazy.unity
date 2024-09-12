@@ -1886,7 +1886,7 @@ GameObject:
   - component: {fileID: 1109657937}
   - component: {fileID: 1109657936}
   m_Layer: 0
-  m_Name: Admin
+  m_Name: GameSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1916,7 +1916,7 @@ MonoBehaviour:
   ScrollSpeed: 0.1
   TimeLimit: 60
   FrameLimit: 0
-  StartCount: 5
+  StartCount: 3
   DoScroll: 1
   Tick: 0
 --- !u!4 &1109657937
