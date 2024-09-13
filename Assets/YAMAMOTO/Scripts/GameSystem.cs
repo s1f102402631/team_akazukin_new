@@ -128,7 +128,7 @@ public class GameSystem : MonoBehaviour
             FlagStart = false;
             ScrScoreManager.DisplayScore();
             ScrButtonToStageSelect.Enable();
-            SceneManager.LoadScene("StageSelect");
+            //SceneManager.LoadScene("StageSelect");
         }
         if (Tick >= FrameLimit){return;}
 
