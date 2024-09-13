@@ -24,10 +24,19 @@ public class PDemo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.Space))
         {
             ViewPoint(Number);
         }
+        */
+    }
+
+    // ゲームオブジェクトが破壊されたときに呼ばれる
+    private void OnDestroy()
+    {
+        ViewPoint(Number);
+        Debug.Log($"{gameObject.name} has been destroyed.");
     }
 
     private void ViewPoint(int _damage)
