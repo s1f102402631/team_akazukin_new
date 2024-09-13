@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//的の頭上にスコアを表示させるスクリプトです。
 public class PDemo : MonoBehaviour
 {
     [SerializeField]

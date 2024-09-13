@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//的の頭上のスコア表示を制御するスクリプトです。
 public class PointNum : MonoBehaviour
 {
     
