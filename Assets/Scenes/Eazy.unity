@@ -768,7 +768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gaugeBar: {fileID: 478791686}
-  fillSpeed: 0.016
+  fillSpeed: 0.013
 --- !u!1 &521676129
 GameObject:
   m_ObjectHideFlags: 0
@@ -3429,7 +3429,6 @@ MonoBehaviour:
   PointObj: {fileID: 0}
   PosObj: {fileID: 0}
   AdjPos: {x: 0, y: 0, z: 0}
-  Number: 0
 --- !u!1 &2066969381
 GameObject:
   m_ObjectHideFlags: 0

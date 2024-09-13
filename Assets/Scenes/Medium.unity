@@ -1127,7 +1127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gaugeBar: {fileID: 478791686}
-  fillSpeed: 0.016
+  fillSpeed: 0.013
 --- !u!1 &521676129
 GameObject:
   m_ObjectHideFlags: 0
@@ -3340,6 +3340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1899fc870a04bd04c84180c2c7254de6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
 --- !u!114 &1803575378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3352,6 +3353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1899fc870a04bd04c84180c2c7254de6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
 --- !u!1 &1851273791
 GameObject:
   m_ObjectHideFlags: 0
