@@ -13,6 +13,8 @@ public class GameSystem : MonoBehaviour
     public RangeWallCtrl ScrRangeWall;
     public GameObject ObjScoreManager;
     public ScoreManager ScrScoreManager;
+    public GameObject ObjButtonToStageSelect;
+    public ButtonToStageSelect ScrButtonToStageSelect;
 
 
     public int FrameRate = 60;
@@ -46,7 +48,10 @@ public class GameSystem : MonoBehaviour
         ScrRangeWall = ObjRangeWall.GetComponent<RangeWallCtrl>();
         ObjScoreManager = GameObject.Find("ScoreManager");
         ScrScoreManager = ObjScoreManager.GetComponent<ScoreManager>();
+        ObjButtonToStageSelect = GameObject.Find("ButtonToStageSelect");
+        ScrButtonToStageSelect = ObjButtonToStageSelect.GetComponent<ButtonToStageSelect>();
 
+        ScrButtonToStageSelect.Disable();
         Transform TraPlayer = ObjPlayer.GetComponent<Transform>();
         Vector3 PlayerPos = TraPlayer.position;
         ScrBulletGenerator.MoveTo(0.0f, PlayerPos.y + 0.5f, PlayerPos.z + 1.0f);
@@ -120,7 +125,8 @@ public class GameSystem : MonoBehaviour
             Debug.Log("Finsh!!!");
             FlagStart = false;
             ScrScoreManager.DisplayScore();
-            SceneManager.LoadScene("StageSelect");
+            ScrButtonToStageSelect.Enable();
+            //SceneManager.LoadScene("StageSelect");
         }
         if (Tick >= FrameLimit){return;}
 
