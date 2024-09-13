@@ -553,6 +553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollView: {fileID: 359233138}
+  creditView: {fileID: 0}
 --- !u!1 &417611467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,6 +1996,8 @@ MonoBehaviour:
   ScrRangeWall: {fileID: 0}
   ObjScoreManager: {fileID: 0}
   ScrScoreManager: {fileID: 0}
+  ObjButtonToStageSelect: {fileID: 0}
+  ScrButtonToStageSelect: {fileID: 0}
   FrameRate: 60
   ScrollSpeed: 0.1
   TimeLimit: 60
@@ -2435,6 +2438,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0dff95b858a4274486847646b65100f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjScoreDisplay: {fileID: 0}
+  SrcScoreDisplay: {fileID: 0}
 --- !u!4 &1323191332
 Transform:
   m_ObjectHideFlags: 0
@@ -2747,6 +2752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollView: {fileID: 359233138}
+  creditView: {fileID: 0}
 --- !u!1 &1573605894
 GameObject:
   m_ObjectHideFlags: 0
