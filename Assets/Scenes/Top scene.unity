@@ -701,7 +701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollView: {fileID: 359233138}
-  creditView: {fileID: 0}
+  creditView: {fileID: 2025804870}
 --- !u!1 &417611467
 GameObject:
   m_ObjectHideFlags: 0
