@@ -29,11 +29,6 @@ public class GameSystem : MonoBehaviour
     private Coroutine IdCountdown;
     private Coroutine IdScroll;
 
-    public AudioClip CountDownSE;
-    public AudioClip BGM;
-    public AudioSource audioSourcePlay;
-    public AudioSource audioSourceFinish;
-
 
     // Start is called before the first frame update
     void Start()
@@ -66,7 +61,6 @@ public class GameSystem : MonoBehaviour
         FlagStart = false;
         Tick = 0;
         IdCountdown = StartCoroutine("CountDown");
-        audioSourcePlay.PlayOneShot(CountDownSE); 
 
         //StartCoroutine("Scroll");
 
@@ -87,7 +81,6 @@ public class GameSystem : MonoBehaviour
             } else {
                 Debug.Log("Start!!!");
                 ScrBulletGenerator.CanFire = true;
-                audioSourcePlay.PlayOneShot(BGM);   
 
             }
             yield return new WaitForSeconds(1.0f);
@@ -132,12 +125,10 @@ public class GameSystem : MonoBehaviour
         {
             ScrBulletGenerator.CanFire = false;
             Debug.Log("Finsh!!!");
-            audioSourcePlay.Stop();   //BGM終了   
             FlagStart = false;
             ScrScoreManager.DisplayScore();
-            audioSourceFinish.Play();   //拍手を鳴らす
             ScrButtonToStageSelect.Enable();
-            //SceneManager.LoadScene("StageSelect"); //セレクト画面に遷移
+            SceneManager.LoadScene("StageSelect");
         }
         if (Tick >= FrameLimit){return;}
 
