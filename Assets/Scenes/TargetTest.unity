@@ -255,6 +255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 100
   target_name: Rabbit
+  is_vurnerable: 1
 --- !u!1 &762928955
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,6 +755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 250
   target_name: Wolf
+  is_vurnerable: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

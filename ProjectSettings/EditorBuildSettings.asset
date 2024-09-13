@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Top scene.unity
     guid: a9de44dc5275fff418f3f0ea7499e2bf
   - enabled: 1
-    path: Assets/1week.unity
+    path: Assets/Scenes/TargetTest.unity
     guid: c25b6e2ab6e83cd47a2e19be2a8d80d2
   - enabled: 1
     path: Assets/Scenes/StageSelect.unity
