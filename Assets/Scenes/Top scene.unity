@@ -701,7 +701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollView: {fileID: 359233138}
-  creditView: {fileID: 0}
+  creditView: {fileID: 2025804870}
 --- !u!1 &417611467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,6 +1283,7 @@ GameObject:
   - component: {fileID: 626154274}
   - component: {fileID: 626154273}
   - component: {fileID: 626154277}
+  - component: {fileID: 626154278}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1397,6 +1398,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollView: {fileID: 359233138}
   closeButton: {fileID: 138740672}
+--- !u!114 &626154278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626154272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dc7ceea70f460c41b3ceb5519be3084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 2025804870}
+  closeButton: {fileID: 2075208202}
 --- !u!1 &635882971
 GameObject:
   m_ObjectHideFlags: 0
@@ -1588,7 +1603,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -380, y: -150}
+  m_AnchoredPosition: {x: -280, y: -150}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &646118777
