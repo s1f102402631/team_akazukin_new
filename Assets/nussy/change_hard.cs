@@ -30,8 +30,6 @@ public class change_hard : MonoBehaviour
             Destroy(chane);
             Destroy(locked);
             Debug.Log(score);
-            Destroy(locked);
-            Destroy(chane);
         }
     }
 
@@ -43,4 +41,5 @@ public class change_hard : MonoBehaviour
             SceneManager.LoadScene("Hard");
         }
     }
+
 }

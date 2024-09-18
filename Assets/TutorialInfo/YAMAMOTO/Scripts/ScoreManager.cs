@@ -71,6 +71,13 @@ public class ScoreManager : MonoBehaviour
         TotalScore = 0;
     }
 
+    public void Scorereset()
+    {
+        TotalScore = 0;
+        ObjScoreDisplay = GameObject.Find("ScoreDisplay");
+        SrcScoreDisplay = ObjScoreDisplay.GetComponent<ScoreDisplayCtrl>();
+    }
+
     void Update()
     {
 

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class change_midium : MonoBehaviour
 {
     public int score = 0;
-    public int limitscore = 20000;
+    public int limitscore = 0;
     public GameObject chane, locked;
 
     public void Start()
@@ -30,8 +30,6 @@ public class change_midium : MonoBehaviour
             Destroy(chane);
             Destroy(locked);
             Debug.Log(score);
-            Destroy(locked);
-            Destroy(chane);
         }
     }
 

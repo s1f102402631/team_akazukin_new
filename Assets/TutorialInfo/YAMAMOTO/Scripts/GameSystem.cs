@@ -52,6 +52,7 @@ public class GameSystem : MonoBehaviour
         ObjButtonToStageSelect = GameObject.Find("ButtonToStageSelect");
         ScrButtonToStageSelect = ObjButtonToStageSelect.GetComponent<ButtonToStageSelect>();
 
+        ScrScoreManager.Scorereset();
         ScrButtonToStageSelect.Disable();
         Transform TraPlayer = ObjPlayer.GetComponent<Transform>();
         Vector3 PlayerPos = TraPlayer.position;

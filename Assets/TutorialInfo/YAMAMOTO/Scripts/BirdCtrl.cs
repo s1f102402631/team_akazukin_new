@@ -9,9 +9,12 @@ public class BirdCtrl : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Destroy(this.gameObject, 0.0f);
-        ScrScoreManager.PlusScore("Bird");
-        ScrScoreManager.DebugScore();
+        if (collision.gameObject.name == "BulletPrefab(Clone)")
+        {
+            Destroy(this.gameObject, 0.0f);
+            ScrScoreManager.PlusScore("Bird");
+            ScrScoreManager.DebugScore();
+        }
     }
 
     // Start is called before the first frame update
