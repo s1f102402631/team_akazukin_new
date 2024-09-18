@@ -356,6 +356,7 @@ MonoBehaviour:
   limitscore: 12000
   chane: {fileID: 0}
   locked: {fileID: 0}
+  scoreselect: {fileID: 433628350}
 --- !u!1 &100967436
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,6 +714,7 @@ MonoBehaviour:
   limitscore: 20000
   chane: {fileID: 0}
   locked: {fileID: 0}
+  scoreselect: {fileID: 433628350}
 --- !u!1 &853454205
 GameObject:
   m_ObjectHideFlags: 0

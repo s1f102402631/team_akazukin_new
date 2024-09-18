@@ -8,6 +8,7 @@ public class change_midium : MonoBehaviour
     public int score = 0;
     public int limitscore = 0;
     public GameObject chane, locked;
+    public scoreselect scoreselect;
 
     public void Start()
     {
@@ -25,7 +26,7 @@ public class change_midium : MonoBehaviour
             score = 0;
         }
 
-        if (score >= limitscore)
+        if (score >= limitscore || scoreselect.returnselect() == "midium" || scoreselect.returnselect() == "hard")
         {
             Destroy(chane);
             Destroy(locked);
@@ -36,8 +37,12 @@ public class change_midium : MonoBehaviour
     public void change_button()
     {
         Debug.Log(score);
-        if (score >= limitscore)
+        if (score >= limitscore || scoreselect.returnselect() == "midium" || scoreselect.returnselect() == "hard")
         {
+            if (scoreselect.returnselect() == "midium")
+            {
+                scoreselect.selectmap("midium");
+            }
             SceneManager.LoadScene("Medium");
         }
     }

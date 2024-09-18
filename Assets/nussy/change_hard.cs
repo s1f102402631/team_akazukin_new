@@ -8,6 +8,7 @@ public class change_hard : MonoBehaviour
     public int score = 0;
     public int limitscore = 30000;
     public GameObject chane, locked;
+    public scoreselect scoreselect;
 
     public void Start()
     {
@@ -36,8 +37,9 @@ public class change_hard : MonoBehaviour
     public void change_button()
     {
         Debug.Log(score);
-        if (score >= limitscore)
+        if (score >= limitscore || scoreselect.returnselect() == "hard")
         {
+            scoreselect.selectmap("hard");
             SceneManager.LoadScene("Hard");
         }
     }
