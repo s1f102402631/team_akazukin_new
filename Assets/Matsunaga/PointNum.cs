@@ -27,10 +27,9 @@ public class PointNum : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.LookAt(Camera.main.transform); //数字が常にカメラを向くようにする
+        //this.transform.LookAt(Camera.main.transform); //数字が常にカメラを向くようにする
         TimeCnt += Time.deltaTime; //経過時間カウント
         this.gameObject.transform.localPosition += new Vector3(0, MoveRange / DeleteTime * Time.deltaTime, 0); //数値を上に上げる
-        this.gameObject.transform.Rotate(0, -180.0f, 0);
         float _alpha = 1.0f - (1.0f - EndAlpha) * (TimeCnt / DeleteTime); //経過時間によって透明度を変更
         if (_alpha <= 0.0f) _alpha = 0.0f; //透明度の最小値を設定
         NowText.color = new Color(NowText.color.r, NowText.color.g, NowText.color.b, _alpha); //透明度を反映
