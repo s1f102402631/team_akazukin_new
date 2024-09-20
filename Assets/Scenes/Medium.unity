@@ -3396,6 +3396,7 @@ GameObject:
   - component: {fileID: 1658578314}
   - component: {fileID: 1658578313}
   - component: {fileID: 1658578315}
+  - component: {fileID: 1658578316}
   m_Layer: 0
   m_Name: GameSystem
   m_TagString: Untagged
@@ -3654,6 +3655,20 @@ MonoBehaviour:
   audioSourcePlay: {fileID: 1658578314}
   audioSourceFinish: {fileID: 1658578313}
   GameFin: 0
+--- !u!114 &1658578316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658578310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a808ec150a8e848874dc3f9e0e2495, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BordNum: 1
+  ScoreManagerObj: {fileID: 0}
 --- !u!1 &1794385207
 GameObject:
   m_ObjectHideFlags: 0
@@ -3786,7 +3801,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803575372}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1803575374
 Camera:
   m_ObjectHideFlags: 0
