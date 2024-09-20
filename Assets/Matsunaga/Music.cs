@@ -4,36 +4,36 @@ using UnityEngine;
 
 public class Music : MonoBehaviour
 {
-    public AudioClip CountDownSE; //カウントダウン時のSE
-    public AudioClip BGM; //ゲームプレイ中のBGM
+    public AudioSource audioSourcePlay; //ゲームプレイ中BGM
+    public AudioSource audioSourceFinish; //結果発表のSE
 
-    //ゲームプレイ中と結果発表の画面でAudioSourceをわけます。結果発表のSEはaudioSourceFinishに直接格納してあります。
-    public AudioSource audioSourcePlay;
-    public AudioSource audioSourceFinish;
+    private GameSystem GameSystem;
+
+    int Tick;
+    int FrameLimit;
+
+    public bool GameFin; //ゲームが終了したときtrueになる
 
     // Start is called before the first frame update
     void Start()
     {
-        audioSourcePlay.PlayOneShot(CountDownSE); 
+        GameSystem = GetComponent<GameSystem>();
+        GameFin = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*
-        GameSystem Gamesystem = GetComponent<GameSystem>();
+        FrameLimit = GameSystem.FrameLimit;
+        Tick = GameSystem.Tick;
 
-        if(Gamesystem.FlagStart)
+        if (Tick == FrameLimit & (!GameFin))
         {
-            audioSourcePlay.PlayOneShot(BGM);  
-        }
+            GameFin = true;
 
-        if(Gamesystem.Tick == Gamesystem.FrameLimit)
-        {
-            audioSourcePlay.Stop();
-            audioSourceFinish.Play();
+            audioSourcePlay.Stop(); 
+            audioSourceFinish.Play();   
         }
-        */
 
     }
 
