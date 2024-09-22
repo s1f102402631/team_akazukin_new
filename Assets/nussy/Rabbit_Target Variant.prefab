@@ -244,6 +244,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8251200495730847206}
+    - targetCorrespondingSourceObject: {fileID: 3802894698662144240, guid: 83289ec4fadd60e48ac5ae763688262c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2593837107888559984}
   m_SourcePrefab: {fileID: 100100000, guid: 83289ec4fadd60e48ac5ae763688262c, type: 3}
 --- !u!4 &131760378457366472 stripped
 Transform:
@@ -272,6 +276,7 @@ MonoBehaviour:
   score: 100
   target_name: Rabbit
   is_vurnerable: 1
+  speed: 0
 --- !u!114 &1417207637684731902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,3 +303,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjScoreManager: {fileID: 0}
   ScrScoreManager: {fileID: 0}
+--- !u!114 &2593837107888559984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7662779988762226155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ada422b8c4b614383e5abf7ca527e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PointObj: {fileID: 1326618535990724521, guid: 9e04965185e3db544980ccab8c02f7a5,
+    type: 3}
