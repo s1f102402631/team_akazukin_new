@@ -9,9 +9,12 @@ public class WolfCtrl : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Destroy(this.gameObject, 0.0f);
-        ScrScoreManager.PlusScore("Wolf");
-        ScrScoreManager.DebugScore();
+        if (collision.gameObject.name == "BulletPrefab(Clone)")
+        {
+            Destroy(this.gameObject, 0.0f);
+            ScrScoreManager.PlusScore("Wolf");
+            ScrScoreManager.DebugScore();
+        }
     }
 
     // Start is called before the first frame update

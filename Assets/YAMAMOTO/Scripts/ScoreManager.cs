@@ -13,7 +13,8 @@ public class ScoreManager : MonoBehaviour
         {"Wolf", 200},
         {"Apple", 200},
         {"Bird", 500},
-        {"Rabbit", 1000}
+        {"Rabbit", 1000},
+        {"Damage",-500 }
     };
 
     private void Awake()
