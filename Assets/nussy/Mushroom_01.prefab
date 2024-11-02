@@ -12,7 +12,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e842e93ceca072843b9cb185776d60f2, type: 2}
+      objectReference: {fileID: 2100000, guid: 9129681134abd424ab155d0335345dc8, type: 2}
+    - target: {fileID: -1816399838323828789, guid: d062f5c56ffb55c4f832432ada269abe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9129681134abd424ab155d0335345dc8, type: 2}
     - target: {fileID: 100000, guid: d062f5c56ffb55c4f832432ada269abe, type: 3}
       propertyPath: m_Name
       value: Mushroom_01

@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_WEBGL
 using unityroom.Api;
+#endif
 
 public class Ranking : MonoBehaviour
 {   
@@ -37,7 +39,9 @@ public class Ranking : MonoBehaviour
             //Unityroomに転送
             // ボードNo(BordNum)にスコアLastScoreを送信する。
             Debug.Log(LastScore);
-            //UnityroomApiClient.Instance.SendScore(BordNum, LastScore, ScoreboardWriteMode.HighScoreDesc);
+            #if UNITY_WEBGL
+            UnityroomApiClient.Instance.SendScore(BordNum, LastScore, ScoreboardWriteMode.HighScoreDesc);
+            #endif
 
         }
         

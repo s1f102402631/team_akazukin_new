@@ -8,6 +8,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6670151921967725437, guid: ad3119cbd6dce024e8460ef32dec49df,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9129681134abd424ab155d0335345dc8, type: 2}
     - target: {fileID: 100000, guid: ad3119cbd6dce024e8460ef32dec49df, type: 3}
       propertyPath: m_Name
       value: Grass_01
@@ -72,7 +77,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f6df8331b9c294c44b4c4cea267be25b, type: 2}
+      objectReference: {fileID: 2100000, guid: 9129681134abd424ab155d0335345dc8, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

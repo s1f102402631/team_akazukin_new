@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+#if UNITY_EDITOR
 using UnityEditor;
-using JetBrains.Annotations;
 using UnityEditor.UI;
-using System.Runtime.CompilerServices;
+#endif
 
 #if UNITY_EDITOR
 [CustomEditor(typeof(Target))]

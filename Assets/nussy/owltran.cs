@@ -32,7 +32,7 @@ public class owltran : MonoBehaviour
                 // 30ƒtƒŒ[ƒ€ŠÔ’â~
                 if (frameCount <= 60)
                 {
-                    Debug.Log("a");
+                    //Debug.Log("a");
                     transform.position += new Vector3(0, -0.033f, 0);
                 }
                 else
